@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: gray;
 }
 
 .todo-create {
@@ -23,6 +24,7 @@ body {
     border-bottom: 1px solid gray;
     outline: none;
     margin: 10px 0;
+    font-size: 20px;
 }
 
 .todo-create-btn {

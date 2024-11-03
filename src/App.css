@@ -1,3 +1,8 @@
+* {
+    background-color: darkslateblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,31 +13,53 @@ body {
     justify-content: center;
 }
 
+.app-header {
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    margin-top: 30px;
+}
+
 .todo-create {
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .todo-input {
-    width: 100%;
+    width: 490px;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid cornflowerblue;
+    color: lightgray;
     outline: none;
     margin: 10px 0;
     font-size: 20px;
+    padding: 5px;
+}
+
+.todo-input:hover {
+    border-color: aqua;
 }
 
 .todo-create-btn {
     border: none;
-    background-color: bisque;
+    background-color: cornflowerblue;
+    color: navy;
     height: 40px;
     width: 100px;
     border-radius: 20px;
     cursor: pointer;
+    margin: 3px 0 10px 0;
+}
+
+.todo-create-btn:hover {
+    background-color: lightblue;
 }
 
 .todo-block {
@@ -40,9 +67,27 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid lightgray;
-    padding: 5px 0;
-    margin: 10px 0;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 5px 0 5px 10px;
+    margin: 15px 0;
+    color: lightblue;
+    font-size: 18px;
+}
+
+.todo-block:last-child {
+    margin-bottom: 25px;
+}
+
+.todo-block:hover {
+    border-color: aqua;
+}
+
+.todo-block>div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 420px;
 }
 
 .edit-btn {
@@ -52,6 +97,7 @@ body {
     justify-content: space-between;
     margin: 0 5px;
     width: 50px;
+    color: lightblue;
 }
 
 .edit-icon {
@@ -59,9 +105,16 @@ body {
     cursor: pointer;
 }
 
+.edit-icon:hover {
+    color: aqua;
+}
+
 .edit-input {
-    width: 100%;
+    width: 80%;
     outline: none;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightblue;
+    color: lightgray;
+    padding: 3px 0;
+    font-size: 18px;
 }

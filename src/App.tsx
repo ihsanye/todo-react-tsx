@@ -6,6 +6,7 @@ function App() {
 
   return (
     <div>
+      <div className='app-header'><h1>TODO APP</h1></div>
       <TodoCreate />
       <TodoList />
     </div>
